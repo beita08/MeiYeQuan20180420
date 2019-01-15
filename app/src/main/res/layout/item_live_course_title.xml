@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="#F3F3F3"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:paddingEnd="10dp"
+        android:paddingTop="10dp">
+
+
+        <TextView
+            android:id="@+id/tv_live_course_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:text="行业资讯"
+            android:textColor="#000"
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/tv_live_course_more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:drawableEnd="@drawable/more_arrow"
+            android:drawablePadding="3dp"
+            android:text="更多"
+            android:textSize="16sp"/>
+
+    </RelativeLayout>
+
+</LinearLayout>
+
+

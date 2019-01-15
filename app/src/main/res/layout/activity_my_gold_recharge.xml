@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.xasfemr.meiyaya.activity.MyGoldRechargeActivity">
+
+    <include layout="@layout/layout_top_bar"/>
+
+    <include layout="@layout/layout_match_line_10dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tv_recharge_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="充值账户："
+            android:textColor="@color/FF3C3C3C"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/tv_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/tv_recharge_account"
+            android:textColor="@color/FF3C3C3C"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/tv_my_glod"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:text="金币"
+            android:textColor="@color/FF3C3C3C"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@id/tv_my_glod"
+            android:text="余额："
+            android:textColor="@color/FF3C3C3C"
+            android:textSize="14sp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/FFF3F3F3"
+        android:padding="11dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="充值数量：10金币=1元"
+            android:textColor="@color/FFB9B9B9"
+            android:textSize="12sp"/>
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="10dp"
+        android:paddingTop="15dp"
+        android:text="请选择充值数量"
+        android:textColor="@color/FF3C3C3C"
+        android:textSize="14sp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/tv_gold_recharge_num10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_gold_recharge_bg"
+            android:drawableLeft="@drawable/gold_icon"
+            android:drawablePadding="5dp"
+            android:gravity="center_vertical"
+            android:paddingStart="20dp"
+            android:text="10金币"
+            android:textColor="@color/selector_gold_recharge_text"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/tv_gold_recharge_num30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/selector_gold_recharge_bg"
+            android:drawableLeft="@drawable/gold_icon"
+            android:drawablePadding="5dp"
+            android:gravity="center_vertical"
+            android:paddingStart="20dp"
+            android:text="30金币"
+            android:textColor="@color/selector_gold_recharge_text"
+            android:textSize="14sp"/>
+
+
+        <TextView
+            android:id="@+id/tv_gold_recharge_num50"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/selector_gold_recharge_bg"
+            android:drawableLeft="@drawable/gold_icon"
+            android:drawablePadding="5dp"
+            android:gravity="center_vertical"
+            android:paddingStart="20dp"
+            android:text="60金币"
+            android:textColor="@color/selector_gold_recharge_text"
+            android:textSize="14sp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp">
+
+
+        <TextView
+            android:id="@+id/tv_gold_recharge_num100"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_gold_recharge_bg"
+            android:drawableLeft="@drawable/gold_icon"
+            android:drawablePadding="5dp"
+            android:gravity="center_vertical"
+            android:paddingStart="20dp"
+            android:text="120金币"
+            android:textColor="@color/selector_gold_recharge_text"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/tv_gold_recharge_num200"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/selector_gold_recharge_bg"
+            android:drawableLeft="@drawable/gold_icon"
+            android:drawablePadding="5dp"
+            android:gravity="center_vertical"
+            android:paddingStart="20dp"
+            android:text="300金币"
+            android:textColor="@color/selector_gold_recharge_text"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/tv_gold_recharge_num500"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/selector_gold_recharge_bg"
+            android:drawableLeft="@drawable/gold_icon"
+            android:drawablePadding="5dp"
+            android:gravity="center_vertical"
+            android:paddingStart="20dp"
+            android:text="680金币"
+            android:textColor="@color/selector_gold_recharge_text"
+            android:textSize="14sp"/>
+    </RelativeLayout>
+
+    <include layout="@layout/layout_match_line_10dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="10dp"
+        android:paddingTop="15dp"
+        android:text="请选择支付方式"
+        android:textColor="@color/FF3C3C3C"
+        android:textSize="14sp"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_gold_payment_wechatpay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+
+        <ImageView
+            android:id="@+id/iv_wcpay_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/wechat_payment"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:layout_toRightOf="@id/iv_wcpay_icon"
+            android:text="微信支付"
+            android:textColor="@color/FF3C3C3C"
+            android:textSize="14sp"/>
+
+        <ImageView
+            android:id="@+id/iv_gold_wechatpay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/gold_pay_selected"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:background="#F0EDF0"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_gold_payment_alipay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+
+        <ImageView
+            android:id="@+id/iv_alipay_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/payment_alipay"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:layout_toRightOf="@id/iv_alipay_icon"
+            android:text="支付宝支付"
+            android:textColor="@color/FF3C3C3C"
+            android:textSize="14sp"/>
+
+        <ImageView
+            android:id="@+id/iv_gold_alipay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/gold_pay_not_selected"/>
+    </RelativeLayout>
+
+    <!--此处本不需要再包裹一个LinearLayout，但是下面要单独设置灰色的背景，所以采用-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/FFF3F3F3"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_gold_recharge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/selector_button_def_red"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="立即支付  68元"
+            android:textColor="@color/selector_button_text_def_white"
+            android:textSize="16sp"/>
+    </LinearLayout>
+</LinearLayout>
+
+
+
+
+

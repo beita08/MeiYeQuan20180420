@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.xasfemr.meiyaya.fragment.DynamicFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="@color/globalRed">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:padding="14dp"
+            android:src="@drawable/back"
+            android:visibility="gone"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="12dp"
+            android:text="美业圈"
+            android:textColor="@color/globalWhite"
+            android:textSize="18sp"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_my_message"
+            android:layout_width="46dp"
+            android:layout_height="41dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp"
+                android:src="@drawable/my_message_entrance"/>
+
+            <ImageView
+                android:id="@+id/iv_msg_redDot"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/shape_red_dot"
+                android:visibility="gone"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <!--2017年11月27日又再次由竖排变为横排-->
+        <RelativeLayout
+            android:id="@+id/rl_dynamic_friends"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/dynamic_friends_2"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_dynamic_dynamic"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/dynamic_dynamic_2"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <!--本来可以不用包裹这层RelativeLayout,2017年10月27日由横排变为竖排,为了不改代码所以加上这层RelativeLayout,后续你可以优化-->
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/dynamic_friends_big"/>
+    </RelativeLayout>
+
+    <!--本来可以不用包裹这层RelativeLayout,2017年10月27日由横排变为竖排,为了不改代码所以加上这层RelativeLayout,后续你可以优化-->
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/dynamic_dynamic_big"/>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="更多功能，正在开发中，敬请期待！"
+        android:textColor="@color/FFB9B9B9"
+        android:textSize="12sp"/>
+</LinearLayout>
+
+
+
+
+
+
+
+

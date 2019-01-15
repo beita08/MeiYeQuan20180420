@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_top_bar"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_my_collect"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+    </android.support.v7.widget.RecyclerView>
+
+    <View
+        android:visibility="gone"
+        android:id="@+id/view_edit_bottom_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#F0EDF0"/>
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/rl_edit_bottom_line"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingEnd="20dp"
+        android:paddingStart="20dp">
+
+        <ImageView
+            android:id="@+id/iv_edit_all_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/edit_tag_unselected"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:layout_toRightOf="@id/iv_edit_all_select"
+            android:text="全选"
+            android:textColor="#3C3C3C"
+            android:textSize="15sp"/>
+
+        <ImageView
+            android:id="@+id/iv_edit_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/edit_delete"/>
+    </RelativeLayout>
+
+</LinearLayout>

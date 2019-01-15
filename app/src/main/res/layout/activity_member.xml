@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_top_bar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <!--原text  android:text="热门课程" -->
+        <TextView
+            android:id="@+id/tv_member_course_hot"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_tab_indicator"
+            android:gravity="center"
+            android:text="课程直播"
+            android:textColor="@color/selector_indicator_text"
+            android:textSize="16sp"/>
+
+        <LinearLayout
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="#F0EDF0"/>
+
+        <TextView
+            android:id="@+id/tv_member_course_playback"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_tab_indicator"
+            android:gravity="center"
+            android:text="精彩回放"
+            android:textColor="@color/selector_indicator_text"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+    <include layout="@layout/layout_match_line_10dp"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_member_course"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </android.support.v4.view.ViewPager>
+
+</LinearLayout>

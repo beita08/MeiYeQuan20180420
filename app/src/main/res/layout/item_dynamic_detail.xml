@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#F3F3F3"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/civ_dy_user_icon"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/meiyaya_logo_round_gray"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_dy_user_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/civ_dy_user_icon">
+
+            <TextView
+                android:id="@+id/tv_dy_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/globalRed"
+                android:textSize="14sp"
+                tools:text="美页圈"/>
+
+            <TextView
+                android:id="@+id/tv_dy_send_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_dy_user_name"
+                android:layout_marginTop="5dp"
+                android:textColor="#B9B9B9"
+                android:textSize="12sp"
+                tools:text="1个小时前"/>
+
+            <ImageView
+                android:id="@+id/iv_dy_focus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/focus"
+                android:visibility="visible"/>
+
+            <ImageView
+                android:id="@+id/iv_dy_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/dynamic_del"
+                android:visibility="gone"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_dy_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rl_dy_user_name"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/civ_dy_user_icon"
+            android:lineSpacingExtra="3dp"
+            android:textColor="#3C3C3C"
+            android:textSize="14sp"
+            tools:text="虽然人们的审美观一直在改变,但对美的追求一直从未改变!"/>
+
+        <com.lzy.ninegrid.NineGridView
+            android:id="@+id/nineGridView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_dy_content"
+            android:layout_marginEnd="56dp"
+            android:layout_toRightOf="@id/civ_dy_user_icon"
+            android:paddingTop="10dp"
+            app:ngv_gridSpacing="5dp"
+            app:ngv_maxSize="9"
+            app:ngv_mode="grid"
+            app:ngv_singleImageRatio="0.75"
+            app:ngv_singleImageSize="160dp"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#F3F3F3"/>
+
+</LinearLayout>
+
+

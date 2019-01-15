@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/textcolor_f3f3f3">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/text_10dp"
+                android:gravity="center"
+                android:background="@color/white">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/tvCourseName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="美容基础学"
+                        android:textSize="@dimen/text_14dp"
+                        android:textColor="@color/textcolor_3c3c3c"/>
+
+                    <TextView
+                        android:id="@+id/tvCourseNum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0人正在学"
+                        android:textColor="@color/textcolor_b9b9b9"
+                        android:textSize="@dimen/text_12dp"/>
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/tvStuday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" 加入学习"
+                    android:gravity="center"
+                    android:background="@drawable/shape_button_load"
+                    android:textSize="@dimen/text_12dp"
+                    android:textColor="@color/white"
+                    android:paddingTop="@dimen/text_5dp"
+                    android:paddingBottom="@dimen/text_5dp"
+                    android:paddingLeft="@dimen/text_10dp"
+                    android:paddingRight="@dimen/text_10dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+               android:layout_marginTop="@dimen/text_10dp"
+                android:background="@color/white"
+                android:padding="@dimen/text_10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="课程简介"
+                    android:textColor="@color/globalRed"
+                    android:textSize="@dimen/text_15dp"
+                    />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/text_1dp"
+                    android:background="@color/textcolor_f3f3f3"
+                    android:layout_marginTop="@dimen/text_10dp"/>
+
+                <TextView
+                    android:id="@+id/tvCouserSummary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="森哥最帅森哥最帅森哥最帅森哥最帅森哥最帅森哥最帅森哥最帅森哥最帅"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="@dimen/text_10dp"
+                android:background="@color/white"
+                android:padding="@dimen/text_10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="讲师简介"
+                    android:textColor="@color/globalRed"
+                    android:textSize="@dimen/text_15dp"
+                    />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/text_1dp"
+                    android:background="@color/textcolor_f3f3f3"
+                    android:layout_marginTop="@dimen/text_10dp"/>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+
+                    android:paddingTop="@dimen/text_10dp"
+                    android:paddingBottom="@dimen/text_10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical">
+
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/img_lecture"
+                        android:layout_width="38dp"
+                        android:layout_height="38dp"
+                        android:src="@drawable/meiyaya_logo_round"/>
+
+                    <TextView
+                        android:id="@+id/tvLectureName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="name"
+                        android:textSize="@dimen/text_15dp"
+                        android:textColor="@color/textcolor_3c3c3c"
+                       android:layout_marginLeft="@dimen/text_10dp"/>
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/tvLectureSummary"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="森哥最帅森哥最帅森哥最帅森哥最帅"
+                        android:layout_marginLeft="48dp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="SF.Theme.NoActionBar" parent="SF.Theme">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+
+    <!--&lt;!&ndash;圆形loading progressbar&ndash;&gt;-->
+    <!--<style name="myProgressBar" parent="Base.Widget.AppCompat.ProgressBar">-->
+        <!--<item name="android:indeterminateTint"> @color/colorAccent</item>-->
+        <!--<item name="android:indeterminateTintMode">src_atop</item>-->
+    <!--</style>-->
+</resources>

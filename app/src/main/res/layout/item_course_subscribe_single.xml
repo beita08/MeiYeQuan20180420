@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="10dp"
+    android:paddingEnd="10dp">
+
+    <RelativeLayout
+        android:id="@+id/rl_course_screenshot"
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+
+        <ImageView
+            android:id="@+id/iv_course_screenshot"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@color/FFF3F3F3"/>
+
+        <TextView
+            android:id="@+id/tv_course_time_duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/course_time_bg"
+            android:gravity="center"
+            android:textColor="@color/globalWhite"
+            android:textSize="10sp"/>
+
+        <TextView
+            android:id="@+id/tv_course_play_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="5dp"
+            android:textColor="@color/globalRed"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/tv_course_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/F4D151515"
+            android:padding="5dp"
+            android:textColor="@color/globalWhite"
+            android:textSize="12sp"
+            android:visibility="visible"/>
+
+        <ImageView
+            android:id="@+id/iv_course_edit_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="10dp"
+            android:src="@drawable/edit_tag_unselected"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_course_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:visibility="gone">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_user_icon"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginEnd="5dp"
+            android:src="@drawable/meiyaya_logo_round_gray"/>
+
+        <TextView
+            android:id="@+id/tv_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/iv_user_icon"
+            android:textColor="@color/userNameColors"
+            android:textSize="14sp"/>
+
+        <ImageView
+            android:id="@+id/iv_user_course_subscribe"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/course_subscribe_cancel"/>
+
+        <TextView
+            android:id="@+id/tv_user_course_des"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_user_name"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/iv_user_icon"
+            android:ellipsize="end"
+            android:lines="1"
+            android:textColor="@color/userDesColors"
+            android:textSize="12dp"/>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/textcolor_f3f3f3">
+    <include layout="@layout/layout_top_bar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="@dimen/text_10dp">
+
+        <ImageView
+            android:id="@+id/iv_pay_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/pay_complete"
+            android:layout_marginTop="@dimen/text_20dp"/>
+
+
+        <TextView
+            android:id="@+id/tv_pay_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textcolor_3c3c3c"
+            android:layout_marginTop="@dimen/text_10dp"
+            android:textSize="@dimen/text_20dp"/>
+
+
+        <TextView
+            android:id="@+id/tv_gold_recharge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/selector_button_def_red"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="完成"
+            android:textColor="@color/selector_button_text_def_white"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+
+    <!--<TextView-->
+        <!--android:layout_width="fill_parent"-->
+        <!--android:layout_height="fill_parent"-->
+        <!--android:gravity="center"-->
+        <!--android:text="@string/pay_result_tip"-->
+        <!--android:textColor="#ff000000"-->
+        <!--android:textSize="20dp"/>-->
+
+
+
+
+
+</LinearLayout>

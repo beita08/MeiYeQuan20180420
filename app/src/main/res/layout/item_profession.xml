@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/selector_recyclerview_press_bg"
+        android:paddingEnd="15dp"
+        android:paddingStart="15dp">
+
+        <TextView
+            android:id="@+id/tv_prof_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="美容机构代表/美容院院长"
+            android:textColor="#3C3C3C"
+            android:textSize="14sp"/>
+
+        <ImageView
+            android:id="@+id/iv_prof_selected"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/select_profession"
+            android:visibility="invisible"/>
+    </RelativeLayout>
+
+    <include layout="@layout/layout_line_1dp"/>
+
+</LinearLayout>

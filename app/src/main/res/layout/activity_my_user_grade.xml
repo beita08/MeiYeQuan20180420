@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="com.xasfemr.meiyaya.activity.LiveCreateActivity">
+
+    <include layout="@layout/layout_top_bar"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="178dp"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/grade_stars">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/civ_user_icon"
+            android:layout_width="128dp"
+            android:layout_height="128dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/meiyaya_logo_round_gray"/>
+
+        <TextView
+            android:id="@+id/tv_user_grade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/civ_user_icon"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/grade_tag"
+            android:gravity="center"
+            android:text="LV.0"
+            android:textColor="@color/globalWhite"
+            android:textSize="20sp"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp">
+
+        <LinearLayout
+            android:id="@+id/ll_pb"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_grade_floor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/grade_v2"/>
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="0dp"
+                android:layout_height="5dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:progressDrawable="@drawable/progressbar_bg"/>
+
+            <ImageView
+                android:id="@+id/iv_grade_ceiling"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/grade_v3"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_grade_growth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="24dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="18dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_grade_growth_left"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:id="@+id/tv_grade_growth"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="1dp"
+                android:textColor="@color/globalRed"
+                android:textSize="13sp"/>
+
+            <TextView
+                android:id="@+id/tv_grade_growth_right"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"/>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll_pb"
+            android:layout_marginTop="3dp">
+
+            <TextView
+                android:id="@+id/tv_grade_floor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="1dp"
+                android:textColor="@color/FF3C3C3C"
+                android:textSize="13sp"/>
+
+            <TextView
+                android:id="@+id/tv_grade_ceiling"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:gravity="center"
+                android:padding="1dp"
+                android:textColor="@color/FF3C3C3C"
+                android:textSize="13sp"/>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:gravity="center"
+        android:text="观看直播增长成长值哦~\n想自己直播，没问题，成长值增长更多哦~"
+        android:textColor="@color/FF696969"
+        android:textSize="15sp"/>
+
+</LinearLayout>

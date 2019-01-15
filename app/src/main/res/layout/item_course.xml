@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_layout_root"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selector_recyclerview_press_bg_white"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingEnd="15dp"
+    android:paddingStart="15dp">
+
+    <ImageView
+        android:id="@+id/ivIcon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/class_11_standard_analysis_2"/>
+
+    <TextView
+        android:id="@+id/tvContent"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="标准划分"
+        android:textColor="@color/FF696969"
+        android:textSize="12sp"/>
+</LinearLayout>

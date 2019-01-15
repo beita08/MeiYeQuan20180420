@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_match_line_10dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:background="@drawable/selector_recyclerview_press_bg_white"
+        android:padding="10dp">
+
+        <RelativeLayout
+            android:id="@+id/rl_ranking_list_logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="12dp">
+
+            <ImageView
+                android:id="@+id/iv_ranking_list_logo"
+                android:layout_width="148dp"
+                android:layout_height="120dp"
+                android:src="@drawable/ranking_list_1_active"/>
+
+            <TextView
+                android:id="@+id/tv_ranking_list_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="活跃榜"
+                android:textColor="@color/globalWhite"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/tv_ranking_list_des"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:padding="5dp"
+                android:text="每周更新"
+                android:textColor="@color/globalWhite"
+                android:textSize="12sp"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_rankinglist_first"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/rl_ranking_list_logo"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="invisible">
+
+            <ImageView
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:src="@drawable/ranking_list_medal_1"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/civ_user_icon_first"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="8dp"
+                android:src="@drawable/meiyaya_logo_round_gray"/>
+
+            <TextView
+                android:id="@+id/tv_user_name_first"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:lines="1"
+                android:textColor="@color/FF3C3C3C"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/tv_user_score_first"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:textColor="@color/globalRed"
+                android:textSize="14sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_rankinglist_second"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="5dp"
+            android:layout_toRightOf="@id/rl_ranking_list_logo"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="invisible">
+
+            <ImageView
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:src="@drawable/ranking_list_medal_2"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/civ_user_icon_second"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="8dp"
+                android:src="@drawable/meiyaya_logo_round_gray"/>
+
+            <TextView
+                android:id="@+id/tv_user_name_second"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:lines="1"
+                android:textColor="@color/FF3C3C3C"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/tv_user_score_second"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:textColor="@color/globalRed"
+                android:textSize="14sp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_rankinglist_third"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_toRightOf="@id/rl_ranking_list_logo"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="invisible">
+
+            <ImageView
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:src="@drawable/ranking_list_medal_3"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/civ_user_icon_third"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="8dp"
+                android:src="@drawable/meiyaya_logo_round_gray"/>
+
+            <TextView
+                android:id="@+id/tv_user_name_third"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:lines="1"
+                android:textColor="@color/FF3C3C3C"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/tv_user_score_third"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="3dp"
+                android:textColor="@color/globalRed"
+                android:textSize="14sp"/>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

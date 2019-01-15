@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_top_bar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FEFEF4"
+                android:padding="10dp"
+                android:text="为了您的账号安全，请先完成实名认证哦~"
+                android:textColor="#E99C12"
+                android:textSize="12sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="真实姓名"
+                    android:textColor="@color/FF3C3C3C"
+                    android:textSize="15sp"/>
+
+                <EditText
+                    android:id="@+id/et_real_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="2dp"
+                    android:background="@null"
+                    android:hint="请输入您的真实姓名"
+                    android:inputType="text"
+                    android:maxLength="15"
+                    android:maxLines="1"
+                    android:padding="10dp"
+                    android:textColor="@color/FF3C3C3C"
+                    android:textColorHint="@color/FFB9B9B9"
+                    android:textSize="15sp"/>
+            </LinearLayout>
+
+            <include layout="@layout/layout_line_1dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="身份证号"
+                    android:textColor="@color/FF3C3C3C"
+                    android:textSize="15sp"/>
+
+                <EditText
+                    android:id="@+id/et_idcard_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="2dp"
+                    android:background="@null"
+                    android:hint="请输入您的身份证号码"
+                    android:inputType="text"
+                    android:maxLength="18"
+                    android:maxLines="1"
+                    android:padding="10dp"
+                    android:textColor="@color/FF3C3C3C"
+                    android:textColorHint="@color/FFB9B9B9"
+                    android:textSize="15sp"/>
+            </LinearLayout>
+
+            <include layout="@layout/layout_match_line_10dp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="身份证头像页"
+                    android:textColor="@color/FF3C3C3C"
+                    android:textSize="15sp"/>
+
+                <ImageView
+                    android:id="@+id/iv_idcard_pic_positive"
+                    android:layout_width="120dp"
+                    android:layout_height="80dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="5dp"
+                    android:background="@drawable/idcard_positive"
+                    android:scaleType="centerCrop"/>
+
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="80dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="5dp"
+                    android:scaleType="center"
+                    android:src="@drawable/idcard_to_add"/>
+
+            </RelativeLayout>
+
+            <include layout="@layout/layout_line_1dp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="身份证国徽页"
+                    android:textColor="@color/FF3C3C3C"
+                    android:textSize="15sp"/>
+
+                <ImageView
+                    android:id="@+id/iv_idcard_pic_back"
+                    android:layout_width="120dp"
+                    android:layout_height="80dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="5dp"
+                    android:background="@drawable/idcard_back"
+                    android:scaleType="centerCrop"/>
+
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="80dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="5dp"
+                    android:scaleType="center"
+                    android:src="@drawable/idcard_to_add"/>
+            </RelativeLayout>
+
+            <include layout="@layout/layout_line_1dp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="20dp">
+
+                <TextView
+                    android:id="@+id/tv_qualification_certificate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="资格证等"
+                    android:textColor="@color/FF3C3C3C"
+                    android:textSize="15sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/tv_qualification_certificate"
+                    android:text="（选填）"
+                    android:textColor="@color/FFB9B9B9"
+                    android:textSize="13sp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_qualification_certificate"
+                    android:layout_marginTop="10dp"
+                    android:text="（资格证、工作证都可）"
+                    android:textColor="@color/FFB9B9B9"
+                    android:textSize="13sp"/>
+
+                <ImageView
+                    android:id="@+id/iv_idcard_certificate"
+                    android:layout_width="120dp"
+                    android:layout_height="80dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="5dp"
+                    android:background="@drawable/id_qualification_certificate"
+                    android:scaleType="centerCrop"/>
+
+                <ImageView
+                    android:layout_width="120dp"
+                    android:layout_height="80dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginEnd="5dp"
+                    android:scaleType="center"
+                    android:src="@drawable/idcard_to_add"/>
+            </RelativeLayout>
+
+            <!--此处本不需要再包裹一个LinearLayout，但是下面要单独设置灰色的背景，所以采用-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/FFF3F3F3"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_real_name_submit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="30dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/selector_button_def_red"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:text="提交"
+                    android:textColor="@color/selector_button_text_def_white"
+                    android:textSize="16sp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background">
+
+
+    <include layout="@layout/layout_top_bar"/>
+
+
+
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvFilter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingTop="@dimen/text_10dp"
+        android:paddingBottom="@dimen/text_10dp"></android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+        android:id="@+id/root_View"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/text_10dp"
+        android:layout_marginTop="@dimen/text_10dp">
+
+    <LinearLayout
+        android:id="@+id/layoutRoot"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <com.scwang.smartrefresh.layout.SmartRefreshLayout
+            android:id="@+id/refresh_Layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+    <ListView
+        android:id="@+id/lvRecruitment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:dividerHeight="@dimen/text_1dp"
+        android:divider="@color/textcolor_f0eded">
+
+    </ListView>
+        </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+    </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

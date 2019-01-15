@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="58dp"
+    android:paddingBottom="10dp"
+    android:paddingEnd="15dp"
+    android:paddingStart="15dp"
+    android:paddingTop="10dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/civ_apply_icon"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:layout_marginEnd="10dp"
+        android:src="@drawable/meiyaya_logo_round_gray"/>
+
+    <TextView
+        android:id="@+id/tv_apply_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/civ_apply_icon"
+        android:textColor="@color/FF3C3C3C"
+        android:textSize="14sp"
+        tools:text="猫猫"/>
+
+    <TextView
+        android:id="@+id/tv_apply_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="5dp"
+        android:textColor="@color/globalRed"
+        android:textSize="14sp"
+        tools:text="17629006931"/>
+
+    <TextView
+        android:id="@+id/tv_apply_job"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:layout_toEndOf="@id/tv_apply_name"
+        android:layout_toStartOf="@id/tv_apply_phone"
+        android:textColor="@color/FF3C3C3C"
+        android:textSize="14sp"
+        tools:text="美容导师"/>
+
+    <TextView
+        android:id="@+id/tv_apply_gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="20dp"
+        android:layout_toEndOf="@id/civ_apply_icon"
+        android:textColor="@color/FF9E9E9E"
+        android:textSize="12sp"
+        android:visibility="gone"
+        tools:text="性别"/>
+
+    <TextView
+        android:id="@+id/tv_apply_peopleNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="20dp"
+        android:layout_toEndOf="@id/tv_apply_gender"
+        android:textColor="@color/FF9E9E9E"
+        android:textSize="12sp"
+        tools:text="人数"/>
+
+    <TextView
+        android:id="@+id/tv_apply_company"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@id/tv_apply_peopleNum"
+        android:textColor="@color/FF9E9E9E"
+        android:textSize="12sp"
+        android:maxLines="1"
+        tools:text="单位"/>
+</RelativeLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="10dp"
+    android:paddingEnd="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/FFF3F3F3"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_lec_icon"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@drawable/meiyaya_logo_round_gray"/>
+
+        <TextView
+            android:id="@+id/tv_lec_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:textColor="#3C3C3C"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/tv_lec_fans"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="关注Ta的:"
+            android:textColor="#B9B9B9"
+            android:textSize="12sp"/>
+
+        <ImageView
+            android:id="@+id/iv_lec_focus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/focus"/>
+    </LinearLayout>
+</LinearLayout>

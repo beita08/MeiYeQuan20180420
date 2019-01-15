@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.xasfemr.meiyaya.activity.DynamicAddActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tv_dynamic_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/selector_text_press_pressedred"
+            android:padding="13dp"
+            android:text="取消"
+            android:textColor="@color/FF3C3C3C"
+            android:textSize="17sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="12dp"
+            android:text="发动态"
+            android:textColor="@color/FF3C3C3C"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/tv_dynamic_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/selector_text_press_pressedred"
+            android:padding="13dp"
+            android:text="发布"
+            android:textColor="@color/FF3C3C3C"
+            android:textSize="17sp"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#F3F3F3"/>
+
+    <EditText
+        android:id="@+id/et_dynamic_shared"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:hint="分享你的美~"
+        android:maxLength="500"
+        android:maxLines="10"
+        android:paddingBottom="50dp"
+        android:paddingEnd="15dp"
+        android:paddingStart="15dp"
+        android:paddingTop="10dp"
+        android:textColor="#3C3C3C"
+        android:textColorHint="#CCCCCC"
+        android:textSize="16sp"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:choiceMode="singleChoice"
+        android:divider="@null"
+        android:fadingEdge="none"
+        android:listSelector="@android:color/transparent"
+        android:padding="15dp"
+        android:scrollbarStyle="outsideOverlay"
+        app:layoutManager="android.support.v7.widget.GridLayoutManager"
+        app:spanCount="4"
+        tools:listitem="@layout/list_item_image"/>
+</LinearLayout>

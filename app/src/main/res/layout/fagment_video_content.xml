@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/layout_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="68dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/civ_user_icon"
+                    android:layout_width="38dp"
+                    android:layout_height="38dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginStart="10dp"
+                    android:src="@drawable/beauty"/>
+
+                <TextView
+                    android:id="@+id/tv_user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_toEndOf="@id/civ_user_icon"
+                    android:text=""
+                    android:textColor="@color/FF3C3C3C"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:id="@+id/tv_view_nums"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="16dp"
+                    android:layout_toEndOf="@id/civ_user_icon"
+                    android:text=""
+                    android:textColor="@color/FFB9B9B9"
+                    android:textSize="13sp"/>
+
+                <ImageView
+                    android:id="@+id/ivAttention"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/live_follow1"/>
+
+            </RelativeLayout>
+
+            <include layout="@layout/layout_match_line_10dp"/>
+
+            <TextView
+                android:id="@+id/tvAttention"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:padding="10dp"
+                android:textColor="@color/globalRed"
+                android:textSize="16sp"
+                android:text="简介"/>
+
+            <include layout="@layout/layout_line_1dp"/>
+
+            <TextView
+                android:id="@+id/tv_coursename"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:padding="10dp"
+                android:textColor="@color/FF3C3C3C"
+                android:textSize="16sp"/>
+
+
+            <TextView
+                android:id="@+id/tv_des"
+                android:textColor="@color/FF696969"
+                android:textSize="14sp"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                />
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

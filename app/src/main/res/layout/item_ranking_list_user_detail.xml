@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:background="@drawable/selector_recyclerview_press_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:paddingEnd="25dp"
+        android:paddingStart="15dp"
+        android:paddingTop="10dp">
+
+        <ImageView
+            android:id="@+id/iv_ranking_number"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ranking_list_medal_1"/>
+
+        <TextView
+            android:id="@+id/tv_ranking_number"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="4"
+            android:textColor="@color/FF17070A"
+            android:textSize="15sp"/>
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/civ_user_icon"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:layout_toRightOf="@id/iv_ranking_number"
+            android:src="@drawable/meiyaya_logo_round_gray"/>
+
+        <TextView
+            android:id="@+id/tv_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="5dp"
+            android:layout_toRightOf="@id/civ_user_icon"
+            android:textColor="@color/FF17070A"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:id="@+id/tv_user_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/FF696969"
+            android:textSize="15sp"/>
+    </RelativeLayout>
+
+    <include layout="@layout/layout_line_1dp"/>
+</LinearLayout>

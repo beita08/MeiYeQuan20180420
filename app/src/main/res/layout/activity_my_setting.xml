@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.xasfemr.meiyaya.activity.MySettingActivity">
+
+    <include layout="@layout/layout_top_bar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#F3F3F3"/>
+
+    <!--[消息设置]-->
+    <RelativeLayout
+        android:id="@+id/rl_my_message_setting"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:padding="15dp"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="消息设置"
+            android:textColor="#3C3C3C"
+            android:textSize="15sp"/>
+
+        <ImageView
+            android:id="@+id/iv_msg_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/switch_open"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_my_modify_password"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:padding="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="修改密码"
+            android:textColor="#3C3C3C"
+            android:textSize="15sp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/more_arrow_grey"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:background="#F0EDF0"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_my_advice_feedback"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:padding="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="意见反馈"
+            android:textColor="#3C3C3C"
+            android:textSize="15sp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/more_arrow_grey"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:background="#F0EDF0"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_my_about_ours"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/tv_my_about_ours"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="关于美页圈"
+            android:textColor="#3C3C3C"
+            android:textSize="15sp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@id/tv_my_about_ours"
+            android:src="@drawable/shape_red_dot"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/more_arrow_grey"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#F3F3F3"/>
+
+    <TextView
+        android:id="@+id/tv_my_logout"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:gravity="center"
+        android:text="退出登录"
+        android:textColor="@color/globalRed"
+        android:textSize="16sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F3F3F3"/>
+
+    <!--=============这是华丽的分割线=============-->
+
+    <Button
+        android:id="@+id/btnt_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="进入注册页"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/btnt_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="进入登录页"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/btnt_forget_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="进入手机验证页"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/btnt_set_new_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="进入设置新密码页"
+        android:visibility="gone"/>
+
+</LinearLayout>
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,296 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="SF.Theme.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/globalRed</item>
+        <item name="colorPrimaryDark">@color/globalRed</item>
+        <item name="colorAccent">@color/globalRed</item>
+    </style>
+
+
+    <style name="SFNoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/globalRed</item>
+        <item name="colorPrimaryDark">@color/globalRed</item>
+        <item name="colorAccent">@color/globalRed</item>
+    </style>
+
+    <!--TabLayout样式-->
+    <style name="MyTabLayoutStyle" parent="Widget.Design.TabLayout">
+        <!--tab字体的样式-->
+        <item name="tabTextAppearance">@style/MyTabTextStyle</item>
+        <!--tab指示标的颜色-->
+        <item name="tabIndicatorColor">@color/globalRed</item>
+        <!--tab 指示标的高度-->
+        <item name="tabIndicatorHeight">2dp</item>
+        <!--tab 选中时的颜色-->
+        <item name="tabSelectedTextColor">@color/globalRed</item>
+    </style>
+
+    <!--TabLayout字体样式-->
+    <style name="MyTabTextStyle" parent="TextAppearance.Design.Tab">
+        <!--Tab字体的大小-->
+        <item name="android:textSize">16sp</item>
+        <!--Tab字体的默认的颜色-->
+        <item name="android:textColor">@color/textcolor_3c3c3c</item>
+        <!--Tab字体是否为大写-->
+        <item name="textAllCaps">true</item>
+    </style>
+
+    <!--TabLayout字体样式-->
+    <style name="NewTabTextStyle" parent="TextAppearance.Design.Tab">
+        <!--Tab字体的大小-->
+        <item name="android:textSize">16sp</item>
+        <!--Tab字体的默认的颜色-->
+        <item name="android:textColor">@color/textcolor_3c3c3c</item>
+        <!--Tab字体是否为大写-->
+        <item name="textAllCaps">true</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+
+    <!--基础的 通用的 系统主题色 的 button-->
+    <style name="basic_button" parent="Base.Widget.AppCompat.Button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/selector_button_oval_bg</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_14dp</item>
+    </style>
+
+    <!--进度条-->
+    <style name="style_progress_horizontal" parent="@android:style/Widget.ProgressBar.Horizontal">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:progressDrawable">@drawable/progress_bar_bg</item>
+        <item name="android:indeterminateDrawable">@null</item>
+        <item name="android:layout_height">3.0dip</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <!--圆形loading progressbar-->
+
+    <style name="myProgressBar" parent="Base.Widget.AppCompat.ProgressBar">
+        <item name="android:indeterminateTint" tools:targetApi="lollipop"> @color/colorAccent</item>
+        <item name="android:indeterminateTintMode" tools:targetApi="lollipop">src_atop</item>
+
+    </style>
+
+
+
+    <style name="Bottom_Text_Style">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:button">@null</item>
+        <item name="android:drawablePadding">3dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:textColor">@color/selector_bottom_text</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="main_menu_animstyle">
+        <item name="android:windowEnterAnimation">@anim/photo_dialog_in_anim</item>
+        <item name="android:windowExitAnimation">@anim/photo_dialog_out_anim</item>
+    </style>
+
+    <style name="transparentFrameWindowStyle" parent="android:style/Theme.Dialog">
+        <item name="android:windowBackground">@drawable/photo_choose_bg</item>
+    </style>
+
+    <!--直播间发送金币弹窗样式-->
+    <style name="GoldSendDialogStyle" parent="Theme.AppCompat.Dialog">
+        <!--去掉标题栏-->
+        <item name="android:windowNoTitle">true</item>
+        <!--去掉背景-->
+        <item name="android:windowBackground">@color/F80151515</item>
+        <!--设置进入退出动画-->
+        <item name="android:windowAnimationStyle">@style/ShareAnimStyle</item>
+    </style>
+
+    <!--分享弹窗样式-->
+    <style name="ShareDialogStyle" parent="Theme.AppCompat.Dialog">
+        <!--去掉标题栏-->
+        <item name="android:windowNoTitle">true</item>
+        <!--去掉背景-->
+        <item name="android:windowBackground">@color/globalWhite</item>
+        <!--设置进入退出动画-->
+        <item name="android:windowAnimationStyle">@style/ShareAnimStyle</item>
+    </style>
+
+    <!--分享弹窗动画-->
+    <style name="ShareAnimStyle">
+        <item name="android:windowEnterAnimation">@anim/anim_dialog_enter</item>
+        <item name="android:windowExitAnimation">@anim/anim_dialog_exit</item>
+    </style>
+
+    <!-- Navigation Header -->
+    <style name="NavPage">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center_horizontal</item>
+        <!-- <item name="android:background">@drawable/nav_page</item> -->
+        <item name="android:background">@color/navpage</item>
+    </style>
+
+    <style name="MediaController_SeekBar" parent="android:Widget.SeekBar">
+        <item name="android:progressDrawable">@drawable/nemediacontroller_progressbar</item>
+        <item name="android:indeterminateDrawable">@drawable/nemediacontroller_progressbar</item>
+        <item name="android:minHeight">5dip</item>
+        <item name="android:maxHeight">5dip</item>
+        <item name="android:thumb">@drawable/nemediacontroller_progressbar_thumb</item>
+        <item name="android:thumbOffset">8dip</item>
+        <item name="android:paddingLeft">8dip</item>
+        <item name="android:paddingRight">8dip</item>
+    </style>
+
+    <style name="MediaController_Text">
+        <item name="android:textColor">#bfbfbf</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="AnimationPreview">
+        <item name="android:windowEnterAnimation">@anim/fade_in</item>
+        <item name="android:windowExitAnimation">@anim/fade_out</item>
+    </style>
+
+    <style name="view_line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1px</item>
+        <item name="android:background">@color/group_small_text_color</item>
+    </style>
+
+    <style name="text_title">
+        <item name="android:textSize">@dimen/text_20dp</item>
+        <item name="android:textColor">@color/actionbar_sel_color</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="text_content" parent="text_title">
+        <item name="android:textSize">@dimen/text_18dp</item>
+    </style>
+
+    <style name="text_title_small">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@color/actionbar_sel_color</item>
+        <item name="android:textSize">@dimen/text_19dp</item>
+        <item name="android:padding">6dp</item>
+    </style>
+
+    <style name="text_title_radio">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:textColor">@color/actionbar_sel_color</item>
+        <item name="android:textSize">@dimen/text_19dp</item>
+        <item name="android:padding">6dp</item>
+        <item name="android:background">@color/title_grey</item>
+        <item name="android:drawableRight">@drawable/switch_off</item>
+    </style>
+
+    <style name="radio_button">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+
+    <!--ProgressDialog-->
+    <style name="LoadingProgressDialog" parent="Theme.AppCompat.Dialog">
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="colorAccent">@color/globalRed</item>
+    </style>
+
+
+    <!--SF.Animation.Activity.Slide-->
+
+    <style name="SF.Animation.Activity.Slide" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/slide_right_in</item>
+        <item name="android:activityOpenExitAnimation">@anim/slide_left_out</item>
+        <item name="android:activityCloseEnterAnimation">@anim/slide_left_in</item>
+        <item name="android:activityCloseExitAnimation">@anim/slide_right_out</item>
+    </style>
+
+    <style name="CustomDialog_fill" parent="Theme.AppCompat.Dialog">
+        <!--全屏-->
+        <!--<item name="android:windowFullscreen">true</item>-->
+        <!--设置无标题-->
+        <item name="android:windowNoTitle">true</item>
+        <!--是否浮现在activity之上-->
+        <item name="android:windowIsFloating">true</item>
+        <!--设置Dialog的windowFrame框为无-->
+        <item name="android:windowFrame">@null</item>
+        <!--背景是否模糊显示-->
+        <item name="android:backgroundDimEnabled">false</item>
+        <!--是否半透明-->
+        <item name="android:windowIsTranslucent">true</item>
+        <!--设置dialog的背景-->
+        <item name="android:windowBackground">@color/textcolor_black</item>
+        <!--设置动画，在这里使用让它继承系统的Animation.Dialog-->
+        <item name="android:windowAnimationStyle">@style/AvatarScanAnimStyle</item>
+        <!--设置窗口内容不覆盖-->
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <!--分享弹窗动画-->
+    <style name="AvatarScanAnimStyle">
+        <item name="android:windowEnterAnimation">@anim/anim_avatar_dialog_enter</item>
+        <item name="android:windowExitAnimation">@anim/anim_avater_dialog_exit</item>
+    </style>
+
+
+    <style name="MediaButtonCompat">
+        <item name="android:background">@null</item>
+        <item name="android:layout_width">71dip</item>
+        <item name="android:layout_height">52dip</item>
+    </style>
+
+    <style name="MediaButtonCompat.Previous">
+        <item name="android:src">@drawable/vvc_ic_media_previous</item>
+    </style>
+
+    <style name="MediaButtonCompat.Next">
+        <item name="android:src">@drawable/vvc_ic_media_next</item>
+    </style>
+
+    <style name="MediaButtonCompat.Play">
+        <item name="android:src">@drawable/vvc_ic_media_play</item>
+    </style>
+
+    <style name="MediaButtonCompat.Ffwd">
+        <item name="android:src">@drawable/vvc_ic_media_ff</item>
+    </style>
+
+    <style name="MediaButtonCompat.Rew">
+        <item name="android:src">@drawable/vvc_ic_media_rew</item>
+    </style>
+
+    <style name="MediaButtonCompat.Pause">
+        <item name="android:src">@drawable/vvc_ic_media_pause</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="SF.Theme.NoActionBar">
+        <item name="colorPrimary">@color/transparent</item>
+        <item name="colorPrimaryDark">@color/transparent</item>
+        <item name="colorAccent">@color/transparent</item>
+    </style>
+
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
+</resources>

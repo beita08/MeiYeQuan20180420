@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.xasfemr.meiyaya.activity.DynamicCommentActivity">
+
+    <include layout="@layout/layout_top_bar"/>
+
+    <LinearLayout
+        android:id="@+id/ll_bottom_comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/globalWhite"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tv_add_comment_content"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_input_normal"
+            android:gravity="center_vertical"
+            android:padding="6dp"
+            android:textColor="@color/FF3C3C3C"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/tv_comment_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="发送"
+            android:textColor="@color/selector_press_text_red"
+            android:textSize="17sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_bottom_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_above="@id/ll_bottom_comment"
+        android:background="#DBDBDB"
+        android:orientation="horizontal"></LinearLayout>
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/ll_bottom_comment"
+        android:layout_below="@id/rl_top_bar">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rv_dynamic_detail_comment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:overScrollMode="never"
+                android:visibility="visible">
+            </android.support.v7.widget.RecyclerView>
+
+            <include
+                layout="@layout/layout_loading"
+                android:visibility="gone"/>
+        </FrameLayout>
+
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+</RelativeLayout>

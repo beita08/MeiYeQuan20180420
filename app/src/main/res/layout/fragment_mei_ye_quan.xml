@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/globalWhite"
+    android:orientation="vertical"
+    tools:context="com.xasfemr.meiyaya.fragment.FindFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/iv_find_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:padding="15.5dp"
+            android:src="@drawable/add_black"/>
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tabLayout_meiyequan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toStartOf="@id/iv_find_add"
+            android:background="@color/white"
+            app:tabIndicatorColor="@color/globalRed"
+            app:tabIndicatorHeight="2dp"
+            app:tabMode="scrollable"
+            app:tabSelectedTextColor="@color/globalRed"
+            app:tabTextAppearance="@style/NewTabTextStyle"
+            app:tabTextColor="@color/FF3C3C3C"/>
+    </RelativeLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager_meiyequan"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"/>
+</LinearLayout>

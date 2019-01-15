@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="110dp"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_recyclerview_press_bg"
+        android:paddingBottom="@dimen/text_10dp"
+        android:paddingLeft="@dimen/text_15dp"
+        android:paddingRight="@dimen/text_15dp"
+        android:paddingTop="@dimen/text_10dp">
+
+        <ImageView
+            android:id="@+id/iv_news_img"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="15dp"
+            android:background="@color/FFF3F3F3"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:id="@+id/tv_news_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/iv_news_img"
+            android:ellipsize="end"
+            android:gravity="start"
+            android:maxLines="1"
+            android:textColor="@color/FF17070A"
+            android:textSize="15sp"
+            tools:text="标题标题标题标题标题标题标题标题标题标题"/>
+
+        <TextView
+            android:id="@+id/tv_news_des"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_news_title"
+            android:layout_marginTop="5dp"
+            android:layout_toLeftOf="@id/iv_news_img"
+            android:ellipsize="end"
+            android:gravity="start"
+            android:lines="2"
+            android:textColor="@color/FF9E9E9E"
+            android:textSize="14sp"
+            tools:text="描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述描述"/>
+
+        <TextView
+            android:id="@+id/tv_news_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:textColor="@color/textcolor_9e9e9e"
+            android:textSize="14sp"
+            tools:text="2018年3月20日"/>
+
+        <TextView
+            android:id="@+id/tv_news_scan_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="10dp"
+            android:layout_toLeftOf="@id/iv_news_img"
+            android:layout_toRightOf="@id/tv_news_time"
+            android:drawableLeft="@drawable/scan_num"
+            android:textColor="@color/textcolor_9e9e9e"
+            android:textSize="14sp"
+            tools:text="1000次"/>
+    </RelativeLayout>
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
+

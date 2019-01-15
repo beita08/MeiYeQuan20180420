@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/null_network"
+            />
+
+        <TextView
+            android:id="@+id/netErrorTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="您的网络不稳定，请刷新看看~"
+            android:textColor="@color/textcolor_b9b9b9"
+            android:textSize="14dp"/>
+
+        <Button
+            android:id="@+id/netBT"
+            android:layout_width="130dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/shape_button_load_view"
+            android:text="重新加载"
+            android:textColor="@color/globalRed"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

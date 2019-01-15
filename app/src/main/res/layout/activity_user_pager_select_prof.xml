@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_top_bar"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FEFEF4"
+        android:paddingBottom="10dp"
+        android:paddingStart="15dp"
+        android:paddingTop="10dp"
+        android:text="最多选择3个职位哦~"
+        android:textColor="#E99C12"
+        android:textSize="12sp"
+        android:visibility="gone"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_profession"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+    </android.support.v7.widget.RecyclerView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RadioGroup
+            android:id="@+id/rg_profession"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:background="@drawable/selector_profession_bg"
+                android:button="@null"
+                android:id="@+id/rb_profession_1"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:padding="15dp"
+                android:text="美容机构代表/美容院院长"
+                android:textColor="#3C3C3C"
+                android:textSize="14sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:background="#F0EDF0"/>
+
+            <RadioButton
+                android:background="@drawable/selector_profession_bg"
+                android:button="@null"
+                android:id="@+id/rb_profession_2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:padding="15dp"
+                android:text="美容院店长"
+                android:textColor="#3C3C3C"
+                android:textSize="14sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:background="#F0EDF0"/>
+
+            <RadioButton
+                android:background="@drawable/selector_profession_bg"
+                android:button="@null"
+                android:id="@+id/rb_profession_3"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:padding="15dp"
+                android:text="高级美容师"
+                android:textColor="#3C3C3C"
+                android:textSize="14sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:background="#F0EDF0"/>
+
+            <RadioButton
+                android:background="@drawable/selector_profession_bg"
+                android:button="@null"
+                android:id="@+id/rb_profession_4"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:padding="15dp"
+                android:text="美业技师/学徒"
+                android:textColor="#3C3C3C"
+                android:textSize="14sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:background="#F0EDF0"/>
+
+            <RadioButton
+                android:background="@drawable/selector_profession_bg"
+                android:button="@null"
+                android:id="@+id/rb_profession_5"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:padding="15dp"
+                android:text="整形医生/高级护理"
+                android:textColor="#3C3C3C"
+                android:textSize="14sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:background="#F0EDF0"/>
+
+            <RadioButton
+                android:background="@drawable/selector_profession_bg"
+                android:button="@null"
+                android:id="@+id/rb_profession_6"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:padding="15dp"
+                android:text="高级美容顾问/咨询师"
+                android:textColor="#3C3C3C"
+                android:textSize="14sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:background="#F0EDF0"/>
+
+            <RadioButton
+                android:background="@drawable/selector_profession_bg"
+                android:button="@null"
+                android:id="@+id/rb_profession_7"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:padding="15dp"
+                android:text="美业协会工作人员"
+                android:textColor="#3C3C3C"
+                android:textSize="14sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:background="#F0EDF0"/>
+
+            <RadioButton
+                android:background="@drawable/selector_profession_bg"
+                android:button="@null"
+                android:id="@+id/rb_profession_8"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:padding="15dp"
+                android:text="美业产品、仪器生产厂商/代理商、供应商"
+                android:textColor="#3C3C3C"
+                android:textSize="14sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:background="#F0EDF0"/>
+
+            <RadioButton
+                android:background="@drawable/selector_profession_bg"
+                android:button="@null"
+                android:id="@+id/rb_profession_9"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:padding="15dp"
+                android:text="美业产品销售人员"
+                android:textColor="#3C3C3C"
+                android:textSize="14sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:background="#F0EDF0"/>
+
+            <RadioButton
+                android:background="@drawable/selector_profession_bg"
+                android:button="@null"
+                android:id="@+id/rb_profession_10"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:padding="15dp"
+                android:text="美容治疗师"
+                android:textColor="#3C3C3C"
+                android:textSize="14sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:background="#F0EDF0"/>
+
+            <RadioButton
+                android:background="@drawable/selector_profession_bg"
+                android:button="@null"
+                android:id="@+id/rb_profession_11"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:padding="15dp"
+                android:text="美导（助教老师）"
+                android:textColor="#3C3C3C"
+                android:textSize="14sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:background="#F0EDF0"/>
+
+            <RadioButton
+                android:background="@drawable/selector_profession_bg"
+                android:button="@null"
+                android:id="@+id/rb_profession_12"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:padding="15dp"
+                android:text="美容行业教育培训人员"
+                android:textColor="#3C3C3C"
+                android:textSize="14sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:background="#F0EDF0"/>
+
+            <RadioButton
+                android:background="@drawable/selector_profession_bg"
+                android:button="@null"
+                android:id="@+id/rb_profession_13"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:padding="15dp"
+                android:text="美业仪器操作师"
+                android:textColor="#3C3C3C"
+                android:textSize="14sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:background="#F0EDF0"/>
+
+            <RadioButton
+                android:background="@drawable/selector_profession_bg"
+                android:button="@null"
+                android:id="@+id/rb_profession_14"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:padding="15dp"
+                android:text="美业其他从业人员"
+                android:textColor="#3C3C3C"
+                android:textSize="14sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginStart="10dp"
+                android:background="#F0EDF0"/>
+
+            <RadioButton
+                android:background="@drawable/selector_profession_bg"
+                android:button="@null"
+                android:id="@+id/rb_profession_15"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:padding="15dp"
+                android:text="其他行业"
+                android:textColor="#3C3C3C"
+                android:textSize="14sp"/>
+        </RadioGroup>
+    </ScrollView>
+</LinearLayout>

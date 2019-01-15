@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/FFF3F3F3"
+    android:orientation="vertical"
+    tools:context="com.xasfemr.meiyaya.activity.MySuggestionFeedbackActivity">
+
+    <include layout="@layout/layout_top_bar"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_marginTop="15dp">
+
+        <EditText
+            android:id="@+id/et_user_suggestion"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/selector_input"
+            android:gravity="start"
+            android:hint="请留下您的宝贵意见，让美页圈不断进步，谢谢！"
+            android:maxLength="150"
+            android:padding="10dp"
+            android:textColor="@color/FF3C3C3C"
+            android:textColorHint="@color/FFB9B9B9"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:id="@+id/tv_suggestion_limit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginEnd="20dp"
+            android:text="0/150"
+            android:textColor="@color/FFB9B9B9"
+            android:textSize="14sp"/>
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/et_phone_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/selector_input"
+        android:hint="输入您的联系方式（手机号）"
+        android:inputType="number"
+        android:maxLength="12"
+        android:padding="10dp"
+        android:textColor="@color/FF3C3C3C"
+        android:textColorHint="@color/FFB9B9B9"
+        android:textSize="15sp"/>
+
+    <Button
+        android:id="@+id/btn_submit_suggestion"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/selector_btn_start"
+        android:text="提交"
+        android:textColor="@color/selector_button_text_def_white"
+        android:textSize="16sp"/>
+
+</LinearLayout>

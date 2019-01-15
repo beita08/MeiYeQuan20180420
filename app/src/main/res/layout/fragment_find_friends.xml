@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.xasfemr.meiyaya.fragment.FindFragment">
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ExpandableListView
+                android:id="@+id/elv_friends"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@null"
+                android:overScrollMode="never"
+                android:visibility="visible">
+            </ExpandableListView>
+            <!--android:groupIndicator="@null"-->
+
+            <include
+                layout="@layout/layout_load_no_login"
+                android:visibility="gone"/>
+
+            <include
+                layout="@layout/layout_loading"
+                android:visibility="gone"/>
+
+            <include
+                layout="@layout/layout_load_empty_data"
+                android:visibility="gone"/>
+
+            <include
+                layout="@layout/layout_load_network_failed"
+                android:visibility="gone"/>
+
+            <include layout="@layout/layout_match_line_10dp"/>
+        </RelativeLayout>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+</FrameLayout>

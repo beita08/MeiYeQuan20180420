@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/layout_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/selector_recyclerview_press_bg"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/iv_data_img"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginEnd="10dp"
+            android:background="@color/FFF3F3F3"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:id="@+id/tv_data_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/iv_data_img"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="#17070A"
+            android:textSize="15sp"/>
+
+        <TextView
+            android:id="@+id/tv_data_des"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_data_title"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_toRightOf="@id/iv_data_img"
+            android:ellipsize="end"
+            android:lines="2"
+            android:textColor="@color/userDesColors"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/tv_data_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_data_des"
+            android:layout_toRightOf="@id/iv_data_img"
+            android:textColor="@color/userDesColors"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/tv_data_scan_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_data_des"
+            android:layout_marginStart="10dp"
+            android:layout_toRightOf="@id/tv_data_time"
+            android:drawableLeft="@drawable/scan_num"
+            android:textColor="@color/userDesColors"
+            android:textSize="14sp"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:background="#F3F3F3"></LinearLayout>
+
+</LinearLayout>
+
+
+
+
+
+
+
+
+
+
+

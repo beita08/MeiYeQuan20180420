@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#36000000"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/text_15dp"
+        android:paddingRight="@dimen/text_15dp"
+        android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingTop="@dimen/text_15dp"
+        android:paddingBottom="@dimen/text_15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="价格"
+            android:textColor="@color/textcolor_3c3c3c"
+            android:textSize="@dimen/text_15dp"
+            />
+
+        <EditText
+
+            android:id="@+id/etPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="请填写"
+            android:textSize="@dimen/text_14dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:textColor="@color/textcolor_b9b9b9"
+            android:paddingLeft="@dimen/text_10dp"/>
+
+        <CheckBox
+            android:id="@+id/cbMianYi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="面议"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/text_1dp"
+        android:background="@color/textcolor_f0eded"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingTop="@dimen/text_15dp"
+        android:paddingBottom="@dimen/text_15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="原价"
+            android:textColor="@color/textcolor_3c3c3c"
+            android:textSize="@dimen/text_15dp"
+            />
+
+        <EditText
+            android:id="@+id/et_orginal_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="请填写"
+            android:textSize="@dimen/text_14dp"
+            android:layout_weight="1"
+            android:textColor="@color/textcolor_b9b9b9"
+            android:background="@null"
+            android:paddingLeft="@dimen/text_10dp"/>
+
+    </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/text_1dp"
+            android:background="@color/textcolor_f0eded"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingTop="@dimen/text_15dp"
+        android:paddingBottom="@dimen/text_15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="运费"
+            android:textColor="@color/textcolor_3c3c3c"
+            android:textSize="@dimen/text_15dp"
+            />
+
+        <EditText
+            android:id="@+id/etFreight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="请填写"
+            android:textSize="@dimen/text_14dp"
+            android:layout_weight="1"
+            android:textColor="@color/textcolor_b9b9b9"
+            android:background="@null"
+            android:paddingLeft="@dimen/text_10dp"/>
+
+        <CheckBox
+            android:id="@+id/cbBaoYou"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="包邮"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/text_1dp"
+        android:background="@color/textcolor_f0eded"/>
+
+    </LinearLayout>
+
+    <include layout="@layout/include_keyboardview"/>
+
+
+
+
+
+
+</LinearLayout>

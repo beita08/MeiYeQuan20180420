@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/textcolor_f3f3f3">
+
+    <include layout="@layout/layout_top_bar"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/text_10dp">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/withdraw_completed"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/text_20dp"/>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="提现申请成功"
+            android:textColor="@color/textcolor_3c3c3c"
+            android:textSize="20dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/text_20dp"/>
+        <TextView
+            android:id="@+id/tv_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textColor="@color/textcolor_b9b9b9"
+            android:textSize="14dp"
+            android:layout_gravity="center"/>
+        <TextView
+            android:id="@+id/tv_confirm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:background="@drawable/selector_button_def_red"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="确认"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/selector_button_text_def_white"
+            android:textSize="16dp"/>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

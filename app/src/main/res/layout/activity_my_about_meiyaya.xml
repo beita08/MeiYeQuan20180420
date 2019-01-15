@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F3F3"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="com.xasfemr.meiyaya.activity.LiveCreateActivity">
+
+    <include layout="@layout/layout_top_bar"/>
+
+    <ImageView
+        android:layout_width="93dp"
+        android:layout_height="93dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/meiyaya_logo_rectangle"/>
+
+    <TextView
+        android:id="@+id/tv_meiyaya_version_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="美页圈 V1.0.0"
+        android:textColor="@color/FF3C3C3C"
+        android:textSize="14sp"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_my_check_new_version"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="40dp"
+        android:background="@color/globalWhite"
+        android:padding="15dp">
+
+        <TextView
+            android:id="@+id/tv_check_new_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="检查新版本"
+            android:textColor="#3C3C3C"
+            android:textSize="15sp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@id/tv_check_new_version"
+            android:src="@drawable/shape_red_dot"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/more_arrow_grey"/>
+    </RelativeLayout>
+
+    <include layout="@layout/layout_line_1dp"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_my_like_ours"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/globalWhite"
+        android:padding="15dp"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="喜欢我们"
+            android:textColor="#3C3C3C"
+            android:textSize="15sp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/more_arrow_grey"/>
+    </RelativeLayout>
+
+    <!--<include layout="@layout/layout_line_1dp"/>-->
+
+    <RelativeLayout
+        android:id="@+id/rl_my_about_ours"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/globalWhite"
+        android:padding="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="关于我们"
+            android:textColor="#3C3C3C"
+            android:textSize="15sp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/more_arrow_grey"/>
+    </RelativeLayout>
+</LinearLayout>

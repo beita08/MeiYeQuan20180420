@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/textcolor_f3f3f3"
+    android:orientation="vertical">
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/refresh_Layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="190dp"
+                    android:background="@drawable/home_serach_bg"
+                    >
+
+                    <com.youth.banner.Banner
+                        android:id="@+id/home_banner"
+                        android:layout_width="match_parent"
+                        android:layout_height="190dp"
+                        app:indicator_drawable_selected="@drawable/shape_banner_point_red"
+                        app:indicator_drawable_unselected="@drawable/shape_banner_point_grey"
+                        app:indicator_height="8dp"
+                        app:indicator_margin="3dp"
+                        app:indicator_width="8dp"
+                        />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/text_20dp"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:paddingLeft="@dimen/text_15dp"
+                        android:paddingRight="@dimen/text_15dp">
+
+                        <TextView
+                            android:id="@+id/tvLocation"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawablePadding="@dimen/text_5dp"
+                            android:drawableRight="@drawable/more_bottom"
+                            android:text="西安"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/text_16dp"
+                            />
+
+
+                        <LinearLayout
+                            android:id="@+id/layoutSerach"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/text_5dp"
+                            android:background="@drawable/shape_home_search_bg"
+                            android:orientation="horizontal"
+                            android:padding="@dimen/text_10dp"
+                            android:paddingBottom="@dimen/text_5dp"
+                            android:paddingLeft="@dimen/text_10dp"
+                            android:paddingRight="@dimen/text_10dp"
+                            android:paddingTop="@dimen/text_5dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:drawableLeft="@drawable/icon_home_search"
+                                android:drawablePadding="@dimen/text_10dp"
+                                android:text="搜索"
+                                android:textColor="@color/textcolor_999999"
+                                android:textSize="@dimen/text_14dp"
+                                />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/text_20dp"
+                    android:paddingTop="@dimen/text_20dp">
+
+
+                    <LinearLayout
+                        android:id="@+id/layoutRecruitment"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/home_recruitment"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/text_5dp"
+                            android:text="人才招聘"
+                            android:textColor="@color/textcolor_3c3c3c"
+                            android:textSize="@dimen/text_12dp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layoutInstrumentTransfer"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/home_instrument_transfer"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/text_5dp"
+                            android:text="仪器转让"
+                            android:textColor="@color/textcolor_3c3c3c"
+                            android:textSize="@dimen/text_12dp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layoutRequestJob"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/home_job"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/text_5dp"
+                            android:text="求职"
+                            android:textColor="@color/textcolor_3c3c3c"
+                            android:textSize="@dimen/text_12dp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layoutStoreTransfer"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/home_shop_transfer"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/text_5dp"
+                            android:text="店铺转让"
+                            android:textColor="@color/textcolor_3c3c3c"
+                            android:textSize="@dimen/text_12dp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layoutEquipmentRent"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/home_equipment_rental"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/text_5dp"
+                            android:text="设备租赁"
+                            android:textColor="@color/textcolor_3c3c3c"
+                            android:textSize="@dimen/text_12dp"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/text_10dp"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/text_15dp"
+                    android:paddingRight="@dimen/text_15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/text_5dp"
+                        android:layout_marginTop="@dimen/text_10dp"
+                        android:text="热门会议"
+                        android:textColor="@color/textcolor_17070A"
+                        android:textSize="@dimen/text_16dp"/>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:background="@color/textcolor_f3f3f3"
+                        android:padding="@dimen/text_5dp"
+                        android:layout_marginBottom="@dimen/text_10dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/icon_horn"/>
+
+                        <com.xasfemr.meiyaya.view.MarqueeView
+                            android:id="@+id/marqueeView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:mvAnimDuration="1000"
+                            app:mvDirection="bottom_to_top"
+                            app:mvInterval="4000"
+                            app:mvTextColor="@color/textcolor_3c3c3c"
+                            app:mvTextSize="14sp"
+                            app:mvSingleLine="true"
+                            android:layout_marginLeft="@dimen/text_5dp">
+
+                        </com.xasfemr.meiyaya.view.MarqueeView>
+
+                    </LinearLayout>
+
+
+                    <!--<ImageView-->
+                        <!--android:id="@+id/imgActivity"-->
+                        <!--android:layout_width="match_parent"-->
+                        <!--android:layout_height="65dp"-->
+                        <!--android:layout_marginBottom="@dimen/text_10dp"-->
+                        <!--android:scaleType="centerCrop"-->
+                        <!--android:src="@color/textcolor_f3f3f3"/>-->
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/text_10dp"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    android:paddingBottom="@dimen/text_10dp"
+                    android:paddingLeft="@dimen/text_15dp"
+                    android:paddingRight="@dimen/text_15dp"
+                    android:paddingTop="@dimen/text_10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="大家都在看"
+                            android:textColor="@color/textcolor_17070A"
+                            android:textSize="@dimen/text_16dp"/>
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            >
+
+                            <ImageView
+                                android:id="@+id/imgReMen"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/icon_latest_pressed"/>
+
+                            <TextView
+                                android:id="@+id/tvReMen"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/text_5dp"
+                                android:text="最新"
+                                android:textColor="@color/textcolor_3c3c3c"
+                                android:textSize="@dimen/text_12dp"/>
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="@dimen/text_1dp"
+                            android:layout_height="@dimen/text_10dp"
+                            android:layout_marginLeft="@dimen/text_5dp"
+                            android:layout_marginRight="@dimen/text_5dp"
+                            android:background="@color/textcolor_b9b9b9"
+                            />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            >
+
+                            <ImageView
+                                android:id="@+id/imgFuJin"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/icon_positioning"/>
+
+                            <TextView
+                                android:id="@+id/tvFuJin"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/text_5dp"
+                                android:text="附近"
+                                android:textColor="@color/textcolor_9e9e9e"
+                                android:textSize="@dimen/text_12dp"/>
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rvRecommend"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                </android.support.v7.widget.RecyclerView>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    >
+
+                    <include
+                        layout="@layout/item_industry_info_title"/>
+
+                    <com.xasfemr.meiyaya.view.NoScrollListView
+                        android:id="@+id/lvNews"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="@dimen/text_10dp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+</LinearLayout>

@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/FFF3F3F3"
+    tools:context="com.xasfemr.meiyaya.activity.MyReportActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/layout_top_bar"/>
+
+        <include layout="@layout/layout_match_line_10dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/globalWhite"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:text="请选择举报内容:"
+                android:textColor="@color/FF3C3C3C"
+                android:textSize="14sp"/>
+
+            <RadioGroup
+                android:id="@+id/rg_report_option"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rb_report1_live"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_report_rectangle_bg"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="在线课程"
+                    android:textColor="@color/selector_report_mark_text"
+                    android:textSize="14sp"/>
+
+                <RadioButton
+                    android:id="@+id/rb_report2_playback"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_report_rectangle_bg"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="回放课程"
+                    android:textColor="@color/selector_report_mark_text"
+                    android:textSize="14sp"/>
+
+                <RadioButton
+                    android:id="@+id/rb_report3_dynamic"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_report_rectangle_bg"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="动态图文"
+                    android:textColor="@color/selector_report_mark_text"
+                    android:textSize="14sp"/>
+
+                <RadioButton
+                    android:id="@+id/rb_report4_chat"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_report_rectangle_bg"
+                    android:button="@null"
+                    android:checked="true"
+                    android:gravity="center"
+                    android:text="私信聊天"
+                    android:textColor="@color/selector_report_mark_text"
+                    android:textSize="14sp"/>
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <include layout="@layout/layout_match_line_10dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="145dp"
+            android:background="@color/globalWhite"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:text="请选择举报内容:"
+                android:textColor="@color/FF3C3C3C"
+                android:textSize="14sp"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="55dp"
+                android:choiceMode="singleChoice"
+                android:divider="@null"
+                android:fadingEdge="none"
+                android:listSelector="@android:color/transparent"
+                android:paddingStart="15dp"
+                android:scrollbarStyle="outsideOverlay"
+                app:layoutManager="android.support.v7.widget.GridLayoutManager"
+                app:spanCount="4"
+                tools:listitem="@layout/list_item_image"/>
+
+
+            <TextView
+                android:id="@+id/tv_report_image_limit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="10dp"
+                android:text="0/3"
+                android:textColor="@color/FF9E9E9E"
+                android:textSize="12sp"/>
+        </RelativeLayout>
+
+        <include layout="@layout/layout_match_line_10dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="166dp"
+            android:background="@color/globalWhite">
+
+            <EditText
+                android:id="@+id/et_report_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="15dp"
+                android:background="@null"
+                android:gravity="start"
+                android:hint="您简要补充描述,以便我们更有效的处理"
+                android:lineSpacingExtra="3dp"
+                android:maxLength="50"
+                android:textColor="@color/FF3C3C3C"
+                android:textColorHint="@color/FF9E9E9E"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/tv_report_content_limit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="10dp"
+                android:text="50字以内"
+                android:textColor="@color/FF9E9E9E"
+                android:textSize="12sp"/>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_report_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/selector_button_def_red"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="提交"
+            android:textColor="@color/selector_button_text_def_white"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+</ScrollView>
+

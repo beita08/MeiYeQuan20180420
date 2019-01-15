@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.xasfemr.meiyaya.activity.DyCommentChildActivity">
+
+    <include layout="@layout/layout_top_bar"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_dynamic_comment_child"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+    </android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#DBDBDB"></LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/globalWhite"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tv_add_comment_content"
+            android:textSize="14sp"
+            android:textColor="@color/FF3C3C3C"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_input_normal"/>
+
+        <TextView
+            android:id="@+id/tv_comment_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="发送"
+            android:textColor="@color/selector_press_text_red"
+            android:textSize="17sp"/>
+    </LinearLayout>
+</LinearLayout>

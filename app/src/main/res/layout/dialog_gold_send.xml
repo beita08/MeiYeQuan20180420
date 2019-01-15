@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/rl_gold_send_200"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_gold_send_bg">
+
+            <TextView
+                android:id="@+id/tv_gold_send_200"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="20dp"
+                android:text="200枚金币"
+                android:textColor="@color/globalWhite"
+                android:textSize="12sp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/tv_gold_send_200"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="6dp"
+                android:src="@drawable/gold_send_200"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_gold_send_100"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_gold_send_bg">
+
+            <TextView
+                android:id="@+id/tv_gold_send_100"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="20dp"
+                android:text="100枚金币"
+                android:textColor="@color/globalWhite"
+                android:textSize="12sp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/tv_gold_send_100"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="6dp"
+                android:src="@drawable/gold_send_100"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_gold_send_80"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_gold_send_bg">
+
+            <TextView
+                android:id="@+id/tv_gold_send_80"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="20dp"
+                android:text="80枚金币"
+                android:textColor="@color/globalWhite"
+                android:textSize="12sp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/tv_gold_send_80"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="6dp"
+                android:src="@drawable/gold_send_80"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_gold_send_50"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_gold_send_bg">
+
+            <TextView
+                android:id="@+id/tv_gold_send_50"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="20dp"
+                android:text="50枚金币"
+                android:textColor="@color/globalWhite"
+                android:textSize="12sp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/tv_gold_send_50"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="6dp"
+                android:src="@drawable/gold_send_50"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/rl_gold_send_25"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_gold_send_bg">
+
+            <TextView
+                android:id="@+id/tv_gold_send_25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="20dp"
+                android:text="25枚金币"
+                android:textColor="@color/globalWhite"
+                android:textSize="12sp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/tv_gold_send_25"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="6dp"
+                android:src="@drawable/gold_send_25"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_gold_send_10"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_gold_send_bg">
+
+            <TextView
+                android:id="@+id/tv_gold_send_10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="20dp"
+                android:text="10枚金币"
+                android:textColor="@color/globalWhite"
+                android:textSize="12sp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/tv_gold_send_10"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="6dp"
+                android:src="@drawable/gold_send_10"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_gold_send_5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_gold_send_bg">
+
+            <TextView
+                android:id="@+id/tv_gold_send_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="20dp"
+                android:text="5枚金币"
+                android:textColor="@color/globalWhite"
+                android:textSize="12sp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/tv_gold_send_5"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="6dp"
+                android:src="@drawable/gold_send_5"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_gold_send_1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_gold_send_bg">
+
+            <TextView
+                android:id="@+id/tv_gold_send_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="20dp"
+                android:text="1枚金币"
+                android:textColor="@color/globalWhite"
+                android:textSize="12sp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/tv_gold_send_1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="6dp"
+                android:src="@drawable/gold_send_1"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:background="@color/F80151515">
+
+        <LinearLayout
+            android:id="@+id/ll_gold_recharge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="余额："
+                android:textColor="@color/globalRed"
+                android:textSize="13sp"/>
+
+            <TextView
+                android:id="@+id/tv_user_gold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableEnd="@drawable/me_goto_login"
+                android:drawablePadding="4dp"
+                android:text="金币"
+                android:textColor="@color/globalWhite"
+                android:textSize="13sp"/>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_gold_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="20dp"
+            android:src="@drawable/gold_send_btn"/>
+    </RelativeLayout>
+</LinearLayout>

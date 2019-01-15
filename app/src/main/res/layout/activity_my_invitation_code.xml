@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.xasfemr.meiyaya.activity.MyInvitationCodeActivity">
+
+    <include layout="@layout/layout_top_bar"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="352.5dp"
+        android:layout_marginTop="30dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/invitation_code_number_bg"/>
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_my_user_icon"
+            android:layout_width="103dp"
+            android:layout_height="103dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/beauty"/>
+
+        <TextView
+            android:id="@+id/tv_my_invitation_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="88dp"
+            android:text="000000"
+            android:textColor="@color/globalWhite"
+            android:textSize="30sp"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:orientation="horizontal"
+        android:paddingEnd="12dp"
+        android:paddingStart="12dp">
+
+        <TextView
+            android:id="@+id/tv_share_friends_circle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="10dp"
+            android:drawableTop="@drawable/share_circle_of_friends"
+            android:gravity="center"
+            android:text="朋友圈"
+            android:textColor="#696969"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/tv_share_wechat"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="10dp"
+            android:drawableTop="@drawable/share_wechat"
+            android:gravity="center"
+            android:text="微信"
+            android:textColor="#696969"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/tv_share_qq"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="10dp"
+            android:drawableTop="@drawable/share_qq"
+            android:gravity="center"
+            android:text="QQ"
+            android:textColor="#696969"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/tv_share_weibo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="10dp"
+            android:drawableTop="@drawable/share_weibo"
+            android:gravity="center"
+            android:text="微博"
+            android:textColor="#696969"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/tv_share_qzone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawablePadding="10dp"
+            android:drawableTop="@drawable/share_qzone"
+            android:gravity="center"
+            android:text="QQ空间"
+            android:textColor="#696969"
+            android:textSize="12sp"/>
+    </LinearLayout>
+
+</LinearLayout>

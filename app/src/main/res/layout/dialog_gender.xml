@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_gender_boy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="男"
+            android:textColor="@color/globalRed"
+            android:textSize="16sp"/>
+
+        <ImageView
+            android:id="@+id/iv_gender_boy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/select_profession"
+            android:visibility="gone"/>
+    </RelativeLayout>
+
+    <include layout="@layout/layout_line_1dp"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_gender_gril"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="女"
+            android:textColor="@color/globalRed"
+            android:textSize="16sp"/>
+
+        <ImageView
+            android:id="@+id/iv_gender_gril"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/select_profession"
+            android:visibility="gone"/>
+    </RelativeLayout>
+</LinearLayout>

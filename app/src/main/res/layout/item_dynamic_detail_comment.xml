@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selector_recyclerview_press_bg"
+    android:clickable="true"
+    android:paddingEnd="10dp"
+    android:paddingStart="10dp"
+    android:paddingTop="10dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/civ_dy_user_icon"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_marginEnd="10dp"
+        android:src="@drawable/meiyaya_logo_round_gray"/>
+
+    <RelativeLayout
+        android:id="@+id/rl_dy_user_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/civ_dy_user_icon">
+
+        <TextView
+            android:id="@+id/tv_dy_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="美页圈"
+            android:textColor="@color/FF9E9E9E"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/tv_dy_send_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_dy_user_name"
+            android:layout_marginTop="5dp"
+            tools:text="1个小时前"
+            android:textColor="#B9B9B9"
+            android:textSize="12sp"/>
+
+        <!--对该评论进行回复,2017年11月2日因进度问题暂时先取消,后期功能会加上-->
+        <ImageView
+            android:id="@+id/iv_dy_detail_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="10dp"
+            android:padding="2dp"
+            android:src="@drawable/comment"
+            android:visibility="gone"/>
+
+        <!--对该评论进行点赞,2017年11月2日因进度问题暂时先取消,后期功能会加上-->
+        <TextView
+            android:id="@+id/tv_dy_detail_like"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/iv_dy_detail_comment"
+            android:drawableLeft="@drawable/fabulous"
+            android:drawablePadding="5dp"
+            android:text="867"
+            android:textColor="#9E9E9E"
+            android:textSize="12sp"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_dy_comment_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_dy_user_name"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/civ_dy_user_icon"
+        tools:text="虽然人们的审美观一直在改变,但对美的追求一直从未改变!"
+        android:textColor="#3C3C3C"
+        android:textSize="14sp"/>
+
+    <!--这里是对动态下面的评论的回复,即二级评论,类似于新浪微博的层级;在后面的产品设计中由于这样层级太深,逻辑比较麻烦.所以抛弃二级评论,全部采用一级评论;
+        全部采用一级评论,这样所有的评论不再存在父子关系,而全部是兄弟姐妹的关系,就不存在这里的布局了;-->
+    <LinearLayout
+        android:id="@+id/rl_dy_detail_comment_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_dy_comment_content"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/civ_dy_user_icon"
+        android:background="#DBDBDB"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_comment_child_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingEnd="5dp"
+            android:text="乐乐:"
+            android:textColor="#5DB0BB"/>
+
+        <TextView
+            android:id="@+id/tv_comment_child_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="我也觉得~"
+            android:textColor="#3C3C3C"/>
+
+        <TextView
+            android:id="@+id/tv_comment_child_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="5dp"
+            android:text="共30条回复>"
+            android:textColor="#5DB0BB"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/rl_dy_detail_comment_list"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/civ_dy_user_icon"
+        android:background="#DBDBDB"></LinearLayout>
+</RelativeLayout>

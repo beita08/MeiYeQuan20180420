@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/selector_recyclerview_press_bg"
+    android:orientation="vertical"
+    android:paddingBottom="10dp"
+    android:paddingRight="10dp">
+
+    <RelativeLayout
+        android:id="@+id/rl_live_screenshot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_live_screenshot"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/live_screenshots"/>
+
+        <TextView
+            android:id="@+id/tv_live_title_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/live_title_tag"
+            android:gravity="center"
+            android:textColor="@color/globalWhite"
+            android:textSize="@dimen/text_10dp"/>
+
+        <TextView
+            android:id="@+id/tv_live_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/live_time_bg"
+            android:gravity="center"
+            android:textColor="@color/globalWhite"
+            android:textSize="@dimen/text_10dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_live_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_user_icon"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/meiyaya_logo_round_gray"/>
+
+        <TextView
+            android:id="@+id/tv_people_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:textColor="@color/globalRed"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/tv_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/tv_people_number"
+            android:layout_toRightOf="@id/iv_user_icon"
+            android:ellipsize="end"
+            android:lines="1"
+            android:textColor="@color/userNameColors"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/tv_user_des"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_user_name"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/iv_user_icon"
+            android:ellipsize="end"
+            android:lines="2"
+            android:textColor="@color/userDesColors"
+            android:textSize="12dp"/>
+    </RelativeLayout>
+
+</LinearLayout>

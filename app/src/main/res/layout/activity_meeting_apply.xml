@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.xasfemr.meiyaya.activity.MeetingApplyActivity">
+
+    <include layout="@layout/layout_top_bar"/>
+
+    <TextView
+        android:id="@+id/tv_meeting_apply_peopleNum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F3F3F3"
+        android:paddingBottom="10dp"
+        android:paddingStart="15dp"
+        android:paddingTop="10dp"
+        android:text="截止目前："
+        android:textColor="@color/FF9E9E9E"
+        android:textSize="14sp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/rl_meeting_name"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:paddingEnd="15dp"
+                android:paddingStart="15dp"
+                android:visibility="visible">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="姓&#8194;&#8194;&#8194;&#8194;名"
+                    android:textColor="#3C3C3C"
+                    android:textSize="15sp"/>
+
+                <ImageView
+                    android:id="@+id/iv_meeting_name_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/more_arrow_grey"/>
+
+                <TextView
+                    android:id="@+id/tv_meeting_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="10dp"
+                    android:layout_toLeftOf="@id/iv_meeting_name_arrow"
+                    android:text="请填写"
+                    android:textColor="#9E9E9E"
+                    android:textSize="15sp"/>
+            </RelativeLayout>
+
+            <include layout="@layout/layout_line_1dp"/>
+
+            <RelativeLayout
+                android:id="@+id/rl_meeting_gender"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingEnd="15dp"
+                android:paddingStart="15dp"
+                android:visibility="visible">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="性&#8194;&#8194;&#8194;&#8194;别"
+                    android:textColor="#3C3C3C"
+                    android:textSize="15sp"/>
+
+                <ImageView
+                    android:id="@+id/iv_meeting_gender_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/more_arrow_grey"/>
+
+                <TextView
+                    android:id="@+id/tv_meeting_gender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="10dp"
+                    android:layout_toLeftOf="@id/iv_meeting_gender_arrow"
+                    android:text="请选择"
+                    android:textColor="#9E9E9E"
+                    android:textSize="15sp"/>
+            </RelativeLayout>
+
+
+            <include layout="@layout/layout_line_1dp"/>
+
+            <RelativeLayout
+                android:id="@+id/rl_meeting_phone"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingEnd="15dp"
+                android:paddingStart="15dp"
+                android:visibility="visible">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="联系电话"
+                    android:textColor="#3C3C3C"
+                    android:textSize="15sp"/>
+
+                <ImageView
+                    android:id="@+id/iv_meeting_phone_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/more_arrow_grey"/>
+
+                <TextView
+                    android:id="@+id/tv_meeting_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="10dp"
+                    android:layout_toLeftOf="@id/iv_meeting_phone_arrow"
+                    android:text="请填写"
+                    android:textColor="#9E9E9E"
+                    android:textSize="15sp"/>
+            </RelativeLayout>
+
+            <include layout="@layout/layout_line_1dp"/>
+
+            <RelativeLayout
+                android:id="@+id/rl_meeting_job"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingEnd="15dp"
+                android:paddingStart="15dp"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/tv_meeting_job_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="职&#8194;&#8194;&#8194;&#8194;位"
+                    android:textColor="#3C3C3C"
+                    android:textSize="15sp"/>
+
+                <ImageView
+                    android:id="@+id/iv_meeting_job_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/more_arrow_grey"/>
+
+                <TextView
+                    android:id="@+id/tv_meeting_job"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_toLeftOf="@id/iv_meeting_job_arrow"
+                    android:layout_toRightOf="@id/tv_meeting_job_title"
+                    android:gravity="end"
+                    android:text="请选择"
+                    android:textColor="#9E9E9E"
+                    android:textSize="15sp"/>
+            </RelativeLayout>
+
+            <include layout="@layout/layout_line_1dp"/>
+
+            <RelativeLayout
+                android:id="@+id/rl_meeting_peopleNum"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingEnd="15dp"
+                android:paddingStart="15dp"
+                android:visibility="visible">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="参会人数"
+                    android:textColor="#3C3C3C"
+                    android:textSize="15sp"/>
+
+                <ImageView
+                    android:id="@+id/iv_meeting_peopleNum_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/more_arrow_grey"/>
+
+                <TextView
+                    android:id="@+id/tv_meeting_peopleNum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="10dp"
+                    android:layout_toLeftOf="@id/iv_meeting_peopleNum_arrow"
+                    android:text="请填写"
+                    android:textColor="#9E9E9E"
+                    android:textSize="15sp"/>
+            </RelativeLayout>
+
+            <include layout="@layout/layout_line_1dp"/>
+
+            <RelativeLayout
+                android:id="@+id/rl_meeting_company"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingEnd="15dp"
+                android:paddingStart="15dp"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/tv_meeting_company_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="单&#8194;&#8194;&#8194;&#8194;位"
+                    android:textColor="#3C3C3C"
+                    android:textSize="15sp"/>
+
+                <ImageView
+                    android:id="@+id/iv_meeting_company_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/more_arrow_grey"/>
+
+                <TextView
+                    android:id="@+id/tv_meeting_company"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="10dp"
+                    android:layout_toLeftOf="@id/iv_meeting_company_arrow"
+                    android:layout_toRightOf="@id/tv_meeting_company_title"
+                    android:gravity="end"
+                    android:maxLines="2"
+                    android:ellipsize="end"
+                    android:text="请填写"
+                    android:textColor="#9E9E9E"
+                    android:textSize="15sp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#F3F3F3">
+
+                <Button
+                    android:id="@+id/btn_confirm_submit"
+                    android:layout_width="match_parent"
+                    android:layout_height="38dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="40dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="40dp"
+                    android:background="@drawable/selector_btn_start"
+                    android:text="确认发布"
+                    android:textColor="@color/selector_button_text_def_white"
+                    android:textSize="15sp"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+
+
+
+
+

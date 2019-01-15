@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F3F3"
+    android:orientation="vertical"
+    tools:context="com.xasfemr.meiyaya.activity.LiveCreateActivity">
+
+    <include layout="@layout/layout_top_bar"/>
+
+    <include layout="@layout/layout_match_line_10dp"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/globalWhite"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="15dp">
+
+        <EditText
+            android:id="@+id/et_new_nickname"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="输入新昵称"
+            android:singleLine="true"
+            android:textColor="#3C3C3C"
+            android:textColorHint="@color/FFB9B9B9"
+            android:textSize="15sp"/>
+
+        <ImageView
+            android:id="@+id/iv_close_nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/close"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+</LinearLayout>
